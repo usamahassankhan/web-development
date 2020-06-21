@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function DOM()
+        {
+            var chng= document.getElementsByClassName('chngtxt');
+chng[0].innerHTML="New text arrived,";           //Passing new text to be replaced
+            chng[1].innerHTML="Now you can return.";  
+
+            var first=chng[0].innerHTML;           //saving text to variable
+            var second=chng[1].innerHTML;          
+
+            chng[2].innerHTML=first +" " + second;       //Adding both variable
+            
+        }
+
+    </script>
+</head>
+<body>
+    <p class="chngtxt">Old Text</p>
+    <p class="chngtxt">Old Text Here</p>
+    <p class="chngtxt"></p>
+    <button onclick="DOM()">Submit</button>
+</body>
+</html>

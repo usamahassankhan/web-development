@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        var name1="Waleed"; //This is global variable
+        function check()
+        {
+            name="wahaj"; //if we remove var then it become global variable and can acess after function boundry
+            var name2="Usma"; //Loacal variable
+
+            for(var i=1; i<10; i++)
+            document.write("Wahaj\n");
+            document.write("\n");
+
+            var j=2;
+            while(j<10)
+            {
+                document.write("Ahmed\n");
+                j++;
+            }
+
+
+        }
+        check();
+        document.write(name);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

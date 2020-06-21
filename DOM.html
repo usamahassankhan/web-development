@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function changecolor()
+        {
+            document.getElementById("paragraph").style.color="red";     //here we calling by ID
+            document.getElementById("paragraph").style.fontSize="xx-large";
+
+            var tag=document.getElementsByTagName("p");     //here calling by tag
+            tag[0].style.color="blue";
+
+            var clas= document.getElementsByClassName("chng"); // here calling by class name
+            clas[0].style.color="orange";
+        }
+
+    </script>
+</head>
+<body>
+    <p>To check name by tag calling.</p>
+    <p class="chng">To check name by class name calling.</p>
+    <p id="paragraph"> First Button Code. </p>
+    <button type="submit", onclick="changecolor()">Submit</button>
+
+</body>
+</html>
